@@ -1,5 +1,5 @@
 Bash 
-```
+```bash
 # List of specific ports used
 sudo lsof -i -P -n | grep 1234
 # kill processes matching a string
