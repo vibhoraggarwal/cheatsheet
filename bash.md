@@ -5,4 +5,4 @@ sudo lsof -i -P -n | grep 1234
 ps aux | grep -ie <string_name> | awk '{print $2}' | xargs kill -9 
 ```
 
-If you want to know more about me, refer to my website: https://vibhoraggarwal.github.io/
+If you want to know more about me, refer to my website: [https://vibhoraggarwal.github.io/](https://vibhoraggarwal.github.io/)
