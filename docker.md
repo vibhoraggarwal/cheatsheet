@@ -13,7 +13,10 @@ docker load -i <path to docker image tar file>
 ```
 ## Build a new docker image
 ### Interactive method
-
+```bash
+docker commit -m "<commit message>" <container-id> <repository-path>:<tag>
+docker push <repository-path>:<tag>
+```
 ### Dockerfile method
 ## References
 1. https://www.digitalocean.com/community/questions/how-to-run-multiple-containers-of-the-same-image-and-expose-different-ports
