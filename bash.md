@@ -16,6 +16,10 @@ cd <package-folde>
 make 
 make install
 ```
+### Uninstall or cleaning the configuration for the software installed
+```bash
+make confclean
+```
 
 If you want to know more about me, refer to my website: [https://vibhoraggarwal.github.io/](https://vibhoraggarwal.github.io/)
 
