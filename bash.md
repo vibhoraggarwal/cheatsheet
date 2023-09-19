@@ -1,4 +1,4 @@
-# Bash 
+# Bash
 ```bash
 # List of specific ports used
 sudo lsof -i -P -n | grep 1234
@@ -6,6 +6,15 @@ sudo lsof -i -P -n | grep 1234
 ps aux | grep -ie <string_name> | awk '{print $2}' | xargs kill -9
 # To edit a line in a file
 sed -i "s/^<matching_string>.*/<line to replace>/" /path/to/file
+```
+## Install a software from source
+```bash
+wget <tar-file>
+tar xf <tar-file>
+cd <package-folde>
+./configure
+make 
+make install
 ```
 
 If you want to know more about me, refer to my website: [https://vibhoraggarwal.github.io/](https://vibhoraggarwal.github.io/)
