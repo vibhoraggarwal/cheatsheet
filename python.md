@@ -7,5 +7,7 @@ py -3.8 venv venv # to create a virtual environment
 # On linux
 python3.8 -m venv <path-to-virtual-env>
 source <path-to-virtual-environment>/bin/activate
+# Install python packages systemwide
+sudo pip install --system modulename
 ```
 If you want to know more about me, refer to my website: [https://vibhoraggarwal.github.io/](https://vibhoraggarwal.github.io/)
