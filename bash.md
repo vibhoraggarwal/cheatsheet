@@ -20,6 +20,12 @@ make install
 ```bash
 make confclean
 ```
+## Check if the program is running, if not start it
+```bash
+if ! pgrep roscore > /dev/null; then
+    roscore > /dev/null &
+fi
+```
 
 If you want to know more about me, refer to my website: [https://vibhoraggarwal.github.io/](https://vibhoraggarwal.github.io/)
 
