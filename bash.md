@@ -6,6 +6,8 @@ sudo lsof -i -P -n | grep 1234
 ps aux | grep -ie <string_name> | awk '{print $2}' | xargs kill -9
 # To edit a line in a file
 sed -i "s/^<matching_string>.*/<line to replace>/" /path/to/file
+# Add a user to a specific group
+sudo usermod -aG <group_name> <user>
 ```
 ## Install a software from source
 ```bash
