@@ -17,4 +17,6 @@ git submodule init
 git submodule update --recursive
 # directly clone a branch with recursive submodules
 git clone --recurse-submodules https://github.com/chaconinc/MainProject
+# adding submodules
+git submodule add <link-to-the-repo> /path/to/submodule
 ```
