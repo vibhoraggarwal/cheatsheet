@@ -1,4 +1,5 @@
-# To make sure the local runner is running as service
+# Local runner
+To make sure the local runner is running as service
 We needed to follow the following steps to set it as a service:
 ```bash
 sudo ./svc.sh install
