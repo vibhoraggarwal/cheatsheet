@@ -20,3 +20,10 @@ git clone --recurse-submodules https://github.com/chaconinc/MainProject
 # adding submodules
 git submodule add <link-to-the-repo> /path/to/submodule
 ```
+
+## Reverting the changes
+```bash
+git log # check the commit-hash
+git revert <commit-hash>
+git push
+```
