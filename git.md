@@ -27,3 +27,8 @@ git log # check the commit-hash
 git revert <commit-hash>
 git push
 ```
+## Remots
+```bash
+# change the remote
+git remote set-url origin https://new.url/repo.git
+```
