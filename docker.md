@@ -2,7 +2,9 @@
 ```bash
 docker run -it <image_name>
 # Running an image multiple times
-docker run -it --name="<new_name>" <image_name>
+docker run -it -w /app -v $PWD:/app --name="<new_name>" <image_name>
+# Running an image with bin bash
+docker run -it -w /app -v $PWD:/app <image_name> /bin/bash
 # Running an image parallely
 # To know the container if
 docker ps
