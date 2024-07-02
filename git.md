@@ -25,10 +25,15 @@ git submodule add <link-to-the-repo> /path/to/submodule
 ```bash
 git log # check the commit-hash
 git revert <commit-hash>
+# revert by one commit
+git reset --hard HEAD~1
 git push
 ```
-## Remots
+## Remotes
 ```bash
 # change the remote
 git remote set-url origin https://new.url/repo.git
+# Add a new branch
+git checkout -b new-branch-name
+git push --set-upstream origin new-branch-name
 ```
