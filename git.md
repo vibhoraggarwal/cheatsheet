@@ -36,4 +36,10 @@ git remote set-url origin https://new.url/repo.git
 # Add a new branch
 git checkout -b new-branch-name
 git push --set-upstream origin new-branch-name
+# Add a new remote branch
+git remote add upstream <upstream-repo-url>
+git remote -v
+git fetch upstream
+git checkout master
+git merge upstream/master
 ```
