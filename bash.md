@@ -51,10 +51,10 @@ Example, 755: Here’s how 755 breaks down:
 - The second 5 (4+1) means the group has read and execute permissions.
 - The third 5 (4+1) means others have read and execute permissions.
 ## What does the current file has:
--rwxr-xr-x 1 owner group size date time myscript.sh
+`-rwxr-xr-x 1 owner group size date time myscript.sh`
 
 ## How to change the owner
-sudo chown -R new_owner:new_group folder_name
+`sudo chown -R new_owner:new_group folder_name`
 
 
 ## References
