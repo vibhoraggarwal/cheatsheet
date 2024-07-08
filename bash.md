@@ -33,7 +33,7 @@ If you want to know more about me, refer to my website: [https://vibhoraggarwal.
 
 
 # Permission Breakdown
-
+## Three digits in permission
 The permissions are represented by three digits, where each digit corresponds to a specific set of users:
 
 - The first digit represents the owner (user).
@@ -50,6 +50,12 @@ Example, 755: Here’s how 755 breaks down:
 - The first 7 (4+2+1) means the owner has read, write, and execute permissions.
 - The second 5 (4+1) means the group has read and execute permissions.
 - The third 5 (4+1) means others have read and execute permissions.
-- 
+## What does the current file has:
+-rwxr-xr-x 1 owner group size date time myscript.sh
+
+## How to change the owner
+sudo chown -R new_owner:new_group folder_name
+
+
 ## References
 1. https://unix.stackexchange.com/questions/270953/whats-the-best-way-to-edit-a-file-with-a-bash-script/270954#270954?newreg=74f538df2ebc4efd95a1f88a3b713146
