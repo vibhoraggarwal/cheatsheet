@@ -24,10 +24,11 @@ git submodule add <link-to-the-repo> /path/to/submodule
 ## Reverting the changes
 ```bash
 git log # check the commit-hash
-git revert <commit-hash>
+git checkout -b new-branch-name
+git cherry-pick <commit-hash>
+git checkout <old-branch>
 # revert by one commit
 git reset --hard HEAD~1
-git push
 ```
 ## Remotes
 ```bash
