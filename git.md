@@ -44,3 +44,11 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 ```
+## cloning
+1. Set git secrets automatically:
+```
+sudo apt-get install libsecret-1-0 libsecret-1-dev
+cd /usr/share/doc/git/contrib/credential/libsecret
+sudo make
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+```
