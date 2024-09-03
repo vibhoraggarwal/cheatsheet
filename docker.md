@@ -19,6 +19,16 @@ docker load -i <path to docker image tar file>
 docker commit -m "<commit message>" <container-id> <repository-path>:<tag>
 docker push <repository-path>:<tag>
 ```
+
+## Removing the unnessary docker images
+```bash
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -a -q)
+docker volume prune -f
+docker network prune -f
+docker system prune -a --volumes -f
+```
+
 ### Dockerfile method
 ## References
 1. https://www.digitalocean.com/community/questions/how-to-run-multiple-containers-of-the-same-image-and-expose-different-ports
