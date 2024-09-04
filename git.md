@@ -19,6 +19,14 @@ git submodule update --recursive
 git clone --recurse-submodules https://github.com/chaconinc/MainProject
 # adding submodules
 git submodule add <link-to-the-repo> /path/to/submodule
+# removing modules
+rm -rf path_to_submodule
+## Remove the submodule’s entry from Git configuration.
+git config -f .git/config --remove-section submodule.path_to_submodule
+git commit -m "Removed submodule"
+## optional
+rm -rf .git/modules/path_to_submodule
+git push origin branch_name
 ```
 
 ## Reverting the changes
