@@ -7,7 +7,7 @@ This repository contains references to commonly used commands in different progr
 - [Clean code](cleancode.md)
 - [Cmake](cmake.md)
 - [Docker](docker.md)
-- [Git-actions(git-actions.md)]
+- [Git-actions](git-actions.md)
 - [Git](git.md)
 - [Python](python.md)
 - [QNX](qnx.md)
