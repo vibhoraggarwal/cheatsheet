@@ -56,6 +56,11 @@ Example, 755: Here’s how 755 breaks down:
 ## How to change the owner
 `sudo chown -R new_owner:new_group folder_name`
 
+# Network
+```bash
+# check the devices on the network
+sudo nmap -sn 192.168.1.0/24
+```
 
 ## References
 1. https://unix.stackexchange.com/questions/270953/whats-the-best-way-to-edit-a-file-with-a-bash-script/270954#270954?newreg=74f538df2ebc4efd95a1f88a3b713146
