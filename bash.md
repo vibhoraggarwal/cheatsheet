@@ -62,5 +62,19 @@ Example, 755: Here’s how 755 breaks down:
 sudo nmap -sn 192.168.1.0/24
 ```
 
+# Language
+```bash
+# check the languages installed
+gsettings get org.gnome.desktop.input-sources sources
+# current keyboard
+setxkbmap -query
+# change the current setting
+setxkbmap us
+# To change language persistently
+sudo nano /etc/default/keyboard
+XKBLAYOUT="us"
+sudo dpkg-reconfigure keyboard-configuration
+``
+
 ## References
 1. https://unix.stackexchange.com/questions/270953/whats-the-best-way-to-edit-a-file-with-a-bash-script/270954#270954?newreg=74f538df2ebc4efd95a1f88a3b713146
