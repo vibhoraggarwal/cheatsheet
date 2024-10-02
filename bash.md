@@ -8,6 +8,8 @@ ps aux | grep -ie <string_name> | awk '{print $2}' | xargs kill -9
 sed -i "s/^<matching_string>.*/<line to replace>/" /path/to/file
 # Add a user to a specific group
 sudo usermod -aG <group_name> <user>
+# Run in the current shell as superuser
+sudo -i
 ```
 ## Install a software from source
 ```bash
