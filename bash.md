@@ -10,6 +10,8 @@ sed -i "s/^<matching_string>.*/<line to replace>/" /path/to/file
 sudo usermod -aG <group_name> <user>
 # Run in the current shell as superuser
 sudo -i
+# Process priority list
+ps -eo pid,pri,args
 ```
 ## Install a software from source
 ```bash
