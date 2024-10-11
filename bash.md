@@ -12,6 +12,8 @@ sudo usermod -aG <group_name> <user>
 sudo -i
 # Process priority list
 ps -eo pid,pri,args
+# Use ssh without password
+ssh-copy-id user@remote_server_ip
 ```
 ## Install a software from source
 ```bash
