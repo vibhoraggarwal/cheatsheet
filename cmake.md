@@ -7,4 +7,4 @@ make -j$(nproc)
 ```bash
 # to check the current cmake configuration
 cmake -LA
-``
+```
