@@ -9,5 +9,7 @@ python3.8 -m venv <path-to-virtual-env>
 source <path-to-virtual-environment>/bin/activate
 # Install python packages systemwide
 sudo pip install --system modulename
+# run a python server
+python3 -m http.server 8000
 ```
 If you want to know more about me, refer to my website: [https://vibhoraggarwal.github.io/](https://vibhoraggarwal.github.io/)
