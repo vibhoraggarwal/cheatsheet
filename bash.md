@@ -82,5 +82,11 @@ XKBLAYOUT="us"
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+# Compiling using gcc
+
+```bash
+gcc main.cpp -o main
+```
+
 ## References
 1. https://unix.stackexchange.com/questions/270953/whats-the-best-way-to-edit-a-file-with-a-bash-script/270954#270954?newreg=74f538df2ebc4efd95a1f88a3b713146
