@@ -51,6 +51,12 @@ git remote -v
 git fetch upstream
 git checkout master
 git merge upstream/master
+
+# Rebasing:
+git checkout feature-xyz # current branch
+git fetch origin
+git rebase origin/main # branch to rebase with
+git push --force-with-lease
 ```
 ## cloning
 1. Set git secrets automatically:
