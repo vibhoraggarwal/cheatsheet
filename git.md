@@ -4,7 +4,7 @@
 git checkout <current-branch>
 git merge master
 ```
-## Merge your current changes in a different branch
+## Merge your current changes in a different branchX being the amount of commits you need to rebase
 ```bash
 git checkout <different-branch>
 git add <files>
@@ -57,6 +57,11 @@ git checkout feature-xyz # current branch
 git fetch origin
 git rebase origin/main # branch to rebase with
 git push --force-with-lease
+
+# Very clean rebase (putting commits on top of the remote branch)
+git checkout <current_branch> # current branch
+git fetch origin
+git rebase --onto <remote_branch> <current_branch>~x # "x" being the amount of commits you need to rebase
 ```
 ## cloning
 1. Set git secrets automatically:
