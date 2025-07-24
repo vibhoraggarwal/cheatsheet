@@ -62,6 +62,7 @@ git push --force-with-lease
 git checkout <current_branch> # current branch
 git fetch origin
 git rebase --onto <remote_branch> <current_branch>~x # "x" being the amount of commits you need to rebase
+git push --force # As the commit history would be diverged you would need to do a git push force
 ```
 ## cloning
 1. Set git secrets automatically:
