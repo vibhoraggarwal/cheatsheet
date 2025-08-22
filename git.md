@@ -1,17 +1,23 @@
 # Git
+
 ## Merge your master in the current branch
+
 ```bash
 git checkout <current-branch>
 git merge master
 ```
+
 ## Merge your current changes in a different branchX being the amount of commits you need to rebase
+
 ```bash
 git checkout <different-branch>
 git add <files>
 git commit -m "<message>"
 git push
 ```
+
 ## Using submodules
+
 ```bash
 git submodule init
 git submodule update --recursive
@@ -30,6 +36,7 @@ git push origin branch_name
 ```
 
 ## Reverting the changes
+
 ```bash
 git log # check the commit-hash
 git checkout -b new-branch-name
@@ -37,8 +44,12 @@ git cherry-pick <commit-hash>
 git checkout <old-branch>
 # revert by one commit
 git reset --hard HEAD~1
+# Edit the commits:
+git rebase -i HEAD~2
 ```
+
 ## Remotes
+
 ```bash
 # change the remote
 git remote set-url origin https://new.url/repo.git
@@ -64,8 +75,11 @@ git fetch origin
 git rebase --onto <remote_branch> <current_branch>~x # "x" being the amount of commits you need to rebase
 git push --force # As the commit history would be diverged you would need to do a git push force
 ```
+
 ## cloning
+
 1. Set git secrets automatically:
+
 ```
 sudo apt-get install libsecret-1-0 libsecret-1-dev
 cd /usr/share/doc/git/contrib/credential/libsecret
