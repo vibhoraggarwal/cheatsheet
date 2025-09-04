@@ -46,11 +46,9 @@ git checkout <old-branch>
 git reset --hard HEAD~1
 # Edit the commits:
 git rebase -i HEAD~2
-```
-
-## Remotes
-
-```bash
+# To squash the commits:
+# pick e3f1b35 Commit message 1
+# squash 7ac9a67 Commit message 2
 # change the remote
 git remote set-url origin https://new.url/repo.git
 # Add a new branch
@@ -74,6 +72,8 @@ git checkout <current_branch> # current branch
 git fetch origin
 git rebase --onto <remote_branch> <current_branch>~x # "x" being the amount of commits you need to rebase
 git push --force # As the commit history would be diverged you would need to do a git push force
+# Committing changes without verifying
+git commit -m "<message>" --no-verify
 ```
 
 ## cloning
