@@ -125,6 +125,14 @@ gcc main.cpp -o main
     2. My PC is Fujitsu, so Fujitsu display link: <https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu-5.6.1?filetype=exe>
     3. My docking station  is Fujitsu, so I installed Fujitsu display link: <https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu-5.6.1?filetype=exe>
 
+## Logging:
+### To log in file
+
+```bash
+your_command 2>&1 | tee >(sed -r "s/\x1B\[[0-9;]*[mK]//g" > log.txt) # w/o escape codes
+your_command 2>&1 | tee log.txt # w/ escape codes
+your_command > log.txt 2>&1 #  w/o colour codes
+```
 ## References
 
 1. <https://unix.stackexchange.com/questions/270953/whats-the-best-way-to-edit-a-file-with-a-bash-script/270954#270954?newreg=74f538df2ebc4efd95a1f88a3b713146>
