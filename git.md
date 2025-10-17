@@ -71,6 +71,10 @@ git push --force-with-lease
 git checkout <current_branch> # current branch
 git fetch origin
 git rebase --onto <remote_branch> <current_branch>~x # "x" being the amount of commits you need to rebase
+## In case you don't want to count the number of commits you can also do::
+git merge-base <remote_branch> <current_branch> # This will tell you the common ancestor commit hash. Copy it and use it in the next command
+git rebase -i --onto <remote_branch> <common_ancestor_commit> <current_branch>
+
 git push --force # As the commit history would be diverged you would need to do a git push force
 # Committing changes without verifying
 git commit -m "<message>" --no-verify
