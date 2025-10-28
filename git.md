@@ -90,3 +90,11 @@ cd /usr/share/doc/git/contrib/credential/libsecret
 sudo make
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 ```
+
+## Pulling cleanly:
+
+```bash
+# clean and match the remote branch
+git fetch origin
+git reset --hard @{u}
+```
