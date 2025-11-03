@@ -13,6 +13,8 @@ This repository contains references to commonly used commands in different progr
 - [Git](git.md)
 - [Linux](linux.md)
 - [openssl](openssl.md)
+- [Pull requests](pr.md)
 - [Python](python.md)
 - [QNX](qnx.md)
 - [ROS](ros.md)
+- [VSCode](vscode.md)
